@@ -30,7 +30,7 @@ var session          = require('express-session')
 			passport.use(new FacebookStrategy({
 			clientID: '249524735591263',
 			clientSecret: 'db65fe88a3b00a42ecae1a43809e729d',
-			callbackURL: "http://localhost:8080/auth/facebook/callback",
+			callbackURL: "https://tranquil-reaches-48680.herokuapp.com/auth/facebook/callback",
 			profileFields: ['id', 'displayName', 'photos', 'email']
 		  },
 		  function(accessToken, refreshToken, profile, done) {
