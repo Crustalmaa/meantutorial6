@@ -1,0 +1,26 @@
+<div class = "page header">
+  <h1> Register</h1>
+</div>
+<form ng-submit = "registerAs.registerUser(regData);">
+  <label>Email: </label>
+  <input type = "text"  class = "form-control" placeholder = "Enter email: " name = "email"
+  ng-model = "registerAs.regData.email">
+  <br>
+  <label>Username: </label>
+  <input type = "text"  class = "form-control" placeholder = "Enter username: " name = "username"
+  ng-model = "registerAs.regData.username">
+  <br>
+  <label>Password:</label>
+  <input type = "password" class = "form-control" placeholder = "Enter password: " name = "password"
+  ng-model = "registerAs.regData.password">
+  <br>
+  <button type = "submit" class = "btn btn-primary">Register</button>
+</form>
+<br>
+<div class = "row show-hide-message" ng-show = "registerAs.successMsg">
+  <div class = "alert alert-success">{{registerAs.successMsg}}</div>
+</div>
+<br>
+<div class = "row show-hide-message" ng-show = "registerAs.errorMsg">
+  <div class = "alert alert-danger">{{registerAs.errorMsg}}</div>
+</div>
